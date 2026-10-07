@@ -20,6 +20,10 @@ To explore this question, I trained and compared three classification models:
 
 ## Dataset
 
+This project uses the **Corporate Credit Rating dataset** from OpenML.
+
+**Dataset Source:** [OpenML – Corporate Credit Rating Dataset](https://www.openml.org/search?type=data&status=active&id=46372&sort=runs)
+
 The dataset contains:
 
 - 5,000 observations
@@ -29,16 +33,16 @@ The dataset contains:
 
 The credit rating classes include:
 
-- very_bad
-- bad
-- poor
-- below_average
-- average
-- above_average
-- good
-- very_good
-- excellent
-- outstanding
+- `very_bad`
+- `bad`
+- `poor`
+- `below_average`
+- `average`
+- `above_average`
+- `good`
+- `very_good`
+- `excellent`
+- `outstanding`
 
 The financial features used in the models were:
 
@@ -49,7 +53,9 @@ The financial features used in the models were:
 - `liqassta`
 - `size`
 
-The identifier variable `spid` was excluded from modeling because it does not represent a financial characteristic.
+The dataset also contains an identifier variable, `spid`, which was excluded from modeling because it does not represent a financial characteristic and therefore would not provide meaningful predictive information.
+
+The dataset was used for educational and portfolio purposes as part of this machine learning analysis.
 
 ## Project Workflow
 
